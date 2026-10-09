@@ -1,0 +1,2391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SOLEX premium sneaker store">
+  <title>SOLEX — Premium Sneaker Store</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+
+      <a href="#home" class="logo">SOLEX<span>.</span></a>
+
+      <nav class="desktop-nav" id="desktopNav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#shop" class="nav-link">Shop</a>
+        <a href="#collections" class="nav-link">Collections</a>
+        <a href="#new-arrivals" class="nav-link">New Arrivals</a>
+        <a href="#about" class="nav-link">About</a>
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="icon-btn" id="searchBtn" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button class="icon-btn cart-button" id="cartBtn" aria-label="Shopping cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+
+        <button class="profile-btn" aria-label="Profile">
+          <i class="fa-regular fa-user"></i>
+        </button>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile navigation -->
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#collections">Collections</a>
+      <a href="#new-arrivals">New Arrivals</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <!-- Search -->
+    <div class="search-panel" id="searchPanel">
+      <div class="container search-inner">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Search sneakers..."
+          aria-label="Search sneakers"
+        >
+        <button id="closeSearch" aria-label="Close search">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <p class="eyebrow">NEW COLLECTION 2026</p>
+
+          <h1>
+            Step Into
+            <span>Your Style.</span>
+          </h1>
+
+          <p class="hero-description">
+            Discover premium sneakers designed for movement,
+            comfort and everyday confidence.
+          </p>
+
+          <div class="hero-buttons">
+            <button class="btn btn-primary" data-scroll="#shop">
+              SHOP NOW
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <button class="btn btn-secondary" data-scroll="#collections">
+              EXPLORE COLLECTION
+            </button>
+          </div>
+
+          <div class="hero-meta">
+            <div>
+              <strong>30K+</strong>
+              <span>Happy Customers</span>
+            </div>
+
+            <div>
+              <strong>4.5/5</strong>
+              <span>Average Rating</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-area">
+          <div class="hero-circle"></div>
+
+          <div class="hero-tag">
+            <span>LIMITED</span>
+            <strong>EDITION</strong>
+          </div>
+
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1000&q=90"
+            alt="Premium red sneaker"
+            class="hero-image"
+          >
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+    <section class="achievements">
+      <div class="container stats-grid">
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <div>
+            <strong>2K+</strong>
+            <span>Happy Reviews</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fa-solid fa-users"></i>
+          </div>
+          <div>
+            <strong>30K+</strong>
+            <span>Happy Customers</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fa-solid fa-ranking-star"></i>
+          </div>
+          <div>
+            <strong>4.5/5</strong>
+            <span>Average Rating</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fa-solid fa-gem"></i>
+          </div>
+          <div>
+            <strong>100%</strong>
+            <span>Premium Quality</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= FEATURED PRODUCTS ================= -->
+    <section class="section" id="shop">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SHOP COLLECTION</p>
+            <h2>Featured Sneakers</h2>
+          </div>
+
+          <button class="text-button" data-filter="all">
+            View All
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+          <!-- Product 1 -->
+          <article
+            class="product-card"
+            data-name="Air Runner X"
+            data-category="Running"
+          >
+            <div class="product-image">
+              <span class="sale-badge">-20%</span>
+
+              <button
+                class="wishlist-btn"
+                aria-label="Add Air Runner X to wishlist"
+                data-product="Air Runner X"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </button>
+
+              <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=85"
+                alt="Air Runner X sneaker"
+              >
+            </div>
+
+            <div class="product-info">
+              <span class="product-category">Running</span>
+              <h3>Air Runner X</h3>
+
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.8</span>
+                <small>(128)</small>
+              </div>
+
+              <div class="product-bottom">
+                <div class="price">
+                  <del>₹9,999</del>
+                  <strong>₹7,999</strong>
+                </div>
+
+                <button
+                  class="add-cart-btn"
+                  data-product="Air Runner X"
+                  data-price="7999"
+                  data-image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=300&q=80"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Product 2 -->
+          <article
+            class="product-card"
+            data-name="Street Force 90"
+            data-category="Lifestyle"
+          >
+            <div class="product-image">
+              <span class="sale-badge">-25%</span>
+
+              <button
+                class="wishlist-btn"
+                aria-label="Add Street Force 90 to wishlist"
+                data-product="Street Force 90"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </button>
+
+              <img
+                src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=85"
+                alt="Street Force 90 sneaker"
+              >
+            </div>
+
+            <div class="product-info">
+              <span class="product-category">Lifestyle</span>
+              <h3>Street Force 90</h3>
+
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.9</span>
+                <small>(246)</small>
+              </div>
+
+              <div class="product-bottom">
+                <div class="price">
+                  <del>₹11,999</del>
+                  <strong>₹8,999</strong>
+                </div>
+
+                <button
+                  class="add-cart-btn"
+                  data-product="Street Force 90"
+                  data-price="8999"
+                  data-image="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=300&q=80"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Product 3 -->
+          <article
+            class="product-card"
+            data-name="Urban Max"
+            data-category="Lifestyle"
+          >
+            <div class="product-image">
+
+              <button
+                class="wishlist-btn"
+                aria-label="Add Urban Max to wishlist"
+                data-product="Urban Max"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </button>
+
+              <img
+                src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=700&q=85"
+                alt="Urban Max sneaker"
+              >
+            </div>
+
+            <div class="product-info">
+              <span class="product-category">Lifestyle</span>
+              <h3>Urban Max</h3>
+
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.7</span>
+                <small>(184)</small>
+              </div>
+
+              <div class="product-bottom">
+                <div class="price">
+                  <strong>₹10,499</strong>
+                </div>
+
+                <button
+                  class="add-cart-btn"
+                  data-product="Urban Max"
+                  data-price="10499"
+                  data-image="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=300&q=80"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- Product 4 -->
+          <article
+            class="product-card"
+            data-name="Velocity Pro"
+            data-category="Performance"
+          >
+            <div class="product-image">
+
+              <button
+                class="wishlist-btn"
+                aria-label="Add Velocity Pro to wishlist"
+                data-product="Velocity Pro"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </button>
+
+              <img
+                src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=85"
+                alt="Velocity Pro sneaker"
+              >
+            </div>
+
+            <div class="product-info">
+              <span class="product-category">Performance</span>
+              <h3>Velocity Pro</h3>
+
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span>4.8</span>
+                <small>(201)</small>
+              </div>
+
+              <div class="product-bottom">
+                <div class="price">
+                  <strong>₹12,499</strong>
+                </div>
+
+                <button
+                  class="add-cart-btn"
+                  data-product="Velocity Pro"
+                  data-price="12499"
+                  data-image="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=300&q=80"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="no-results" id="noResults">
+          No sneakers found.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- ================= PRODUCT DETAILS ================= -->
+    <section class="section product-detail-section" id="collections">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">PRODUCT DETAILS</p>
+            <h2>Street Force 90</h2>
+          </div>
+        </div>
+
+        <div class="product-detail-grid">
+
+          <div class="product-gallery">
+
+            <div class="main-product-image">
+              <span class="sale-badge">25% OFF</span>
+
+              <img
+                id="mainProductImage"
+                src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1000&q=90"
+                alt="Street Force 90"
+              >
+            </div>
+
+            <div class="thumbnail-row">
+
+              <button class="thumbnail active">
+                <img
+                  src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=200&q=80"
+                  alt="Sneaker view 1"
+                >
+              </button>
+
+              <button class="thumbnail">
+                <img
+                  src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=200&q=80"
+                  alt="Sneaker view 2"
+                >
+              </button>
+
+              <button class="thumbnail">
+                <img
+                  src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=200&q=80"
+                  alt="Sneaker view 3"
+                >
+              </button>
+
+              <button class="thumbnail">
+                <img
+                  src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=200&q=80"
+                  alt="Sneaker view 4"
+                >
+              </button>
+
+            </div>
+          </div>
+
+
+          <div class="product-detail-info">
+
+            <span class="product-category">Lifestyle Sneaker</span>
+
+            <h2>Street Force 90</h2>
+
+            <div class="detail-rating">
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <strong>4.9</strong>
+              </span>
+              <a href="#reviews">246 Reviews</a>
+            </div>
+
+            <p class="detail-description">
+              Built for everyday movement, the Street Force 90 combines
+              modern streetwear styling with responsive cushioning and
+              premium materials.
+            </p>
+
+            <div class="detail-price">
+              <del>₹11,999</del>
+              <strong>₹8,999</strong>
+              <span>25% OFF</span>
+            </div>
+
+            <p class="stock-status">
+              <i class="fa-solid fa-circle"></i>
+              In Stock — Ready to Ship
+            </p>
+
+            <div class="option-group">
+              <div class="option-title">
+                <strong>Choose Size</strong>
+                <span>UK Size</span>
+              </div>
+
+              <div class="size-options">
+                <button class="size-btn">6</button>
+                <button class="size-btn">7</button>
+                <button class="size-btn active">8</button>
+                <button class="size-btn">9</button>
+                <button class="size-btn">10</button>
+                <button class="size-btn">11</button>
+              </div>
+            </div>
+
+            <div class="purchase-row">
+
+              <div class="quantity-control">
+                <button id="detailMinus" aria-label="Decrease quantity">
+                  −
+                </button>
+                <span id="detailQuantity">1</span>
+                <button id="detailPlus" aria-label="Increase quantity">
+                  +
+                </button>
+              </div>
+
+              <button
+                class="btn btn-primary detail-add-cart"
+                id="detailAddCart"
+              >
+                ADD TO CART
+              </button>
+
+            </div>
+
+            <div class="detail-actions">
+              <button class="btn btn-buy" id="buyNowBtn">
+                BUY NOW
+              </button>
+
+              <button class="wishlist-large" id="detailWishlist">
+                <i class="fa-regular fa-heart"></i>
+                Wishlist
+              </button>
+            </div>
+
+            <div class="info-card-grid">
+
+              <div class="info-card">
+                <i class="fa-solid fa-truck-fast"></i>
+                <div>
+                  <strong>Free Shipping</strong>
+                  <span>On orders over ₹999</span>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <i class="fa-solid fa-rotate-left"></i>
+                <div>
+                  <strong>7-Day Returns</strong>
+                  <span>Easy return policy</span>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <i class="fa-solid fa-lock"></i>
+                <div>
+                  <strong>Secure Payment</strong>
+                  <span>100% protected</span>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <i class="fa-solid fa-gem"></i>
+                <div>
+                  <strong>Premium Quality</strong>
+                  <span>Quality guaranteed</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= CART ================= -->
+    <section class="section cart-section" id="cart">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">YOUR BAG</p>
+            <h2>Shopping Cart</h2>
+          </div>
+        </div>
+
+        <div class="cart-layout">
+
+          <div class="cart-items-wrapper">
+
+            <div id="cartItems">
+              <!-- Cart generated by JavaScript -->
+            </div>
+
+            <div class="empty-cart" id="emptyCart">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <h3>Your cart is empty</h3>
+              <p>Add some sneakers to get started.</p>
+
+              <button class="btn btn-primary" data-scroll="#shop">
+                SHOP SNEAKERS
+              </button>
+            </div>
+
+          </div>
+
+
+          <aside class="order-summary">
+
+            <h3>Order Summary</h3>
+
+            <div class="coupon-box">
+              <input
+                type="text"
+                id="couponInput"
+                placeholder="Coupon code"
+                aria-label="Coupon code"
+              >
+              <button id="couponBtn">APPLY</button>
+            </div>
+
+            <p class="coupon-message" id="couponMessage"></p>
+
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <strong id="subtotal">₹0</strong>
+            </div>
+
+            <div class="summary-row">
+              <span>Shipping</span>
+              <strong id="shipping">₹0</strong>
+            </div>
+
+            <div class="summary-row">
+              <span>Taxes</span>
+              <strong id="taxes">₹0</strong>
+            </div>
+
+            <div class="summary-row discount-row">
+              <span>Discount</span>
+              <strong id="discount">-₹0</strong>
+            </div>
+
+            <div class="summary-total">
+              <span>Total</span>
+              <strong id="cartTotal">₹0</strong>
+            </div>
+
+            <button class="btn btn-primary full-btn" id="cartPayBtn">
+              PAY NOW
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <div class="payment-badges">
+              <span>Razorpay</span>
+              <span>VISA</span>
+              <span>Mastercard</span>
+              <span>UPI</span>
+              <span><i class="fa-solid fa-lock"></i> Secure</span>
+            </div>
+
+            <button class="continue-shopping" data-scroll="#shop">
+              ← Continue Shopping
+            </button>
+
+          </aside>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= CHECKOUT ================= -->
+    <section class="section checkout-section" id="checkout">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SECURE CHECKOUT</p>
+            <h2>Complete Your Order</h2>
+          </div>
+        </div>
+
+        <div class="checkout-layout">
+
+          <div class="checkout-form-card">
+
+            <form id="checkoutForm">
+
+              <div class="checkout-block">
+                <h3>Contact Information</h3>
+
+                <label for="email">
+                  Email ID
+                </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="you@example.com"
+                  required
+                >
+              </div>
+
+
+              <div class="checkout-block">
+                <h3>Payment Method</h3>
+
+                <div class="payment-tabs">
+
+                  <button
+                    type="button"
+                    class="payment-tab active"
+                    data-payment="card"
+                  >
+                    <i class="fa-regular fa-credit-card"></i>
+                    Cards
+                  </button>
+
+                  <button
+                    type="button"
+                    class="payment-tab"
+                    data-payment="upi"
+                  >
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    UPI
+                  </button>
+
+                  <button
+                    type="button"
+                    class="payment-tab"
+                    data-payment="netbanking"
+                  >
+                    <i class="fa-solid fa-building-columns"></i>
+                    Net Banking
+                  </button>
+
+                  <button
+                    type="button"
+                    class="payment-tab"
+                    data-payment="crypto"
+                  >
+                    <i class="fa-brands fa-bitcoin"></i>
+                    Crypto
+                  </button>
+
+                </div>
+
+
+                <div class="payment-content active" id="cardPayment">
+
+                  <label for="cardNumber">
+                    Card Number
+                  </label>
+
+                  <input
+                    type="text"
+                    id="cardNumber"
+                    placeholder="1234 5678 9012 3456"
+                    maxlength="19"
+                    inputmode="numeric"
+                  >
+
+                  <div class="form-grid">
+
+                    <div>
+                      <label for="expiry">
+                        Expiry Date
+                      </label>
+
+                      <input
+                        type="text"
+                        id="expiry"
+                        placeholder="MM / YY"
+                        maxlength="7"
+                      >
+                    </div>
+
+                    <div>
+                      <label for="cvv">
+                        CVV
+                      </label>
+
+                      <input
+                        type="password"
+                        id="cvv"
+                        placeholder="•••"
+                        maxlength="4"
+                      >
+                    </div>
+
+                  </div>
+
+                  <div class="form-grid">
+
+                    <div>
+                      <label for="country">
+                        Country
+                      </label>
+
+                      <select id="country">
+                        <option>India</option>
+                        <option>United States</option>
+                        <option>United Kingdom</option>
+                        <option>Canada</option>
+                        <option>Australia</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label for="zip">
+                        ZIP / Postal Code
+                      </label>
+
+                      <input
+                        type="text"
+                        id="zip"
+                        placeholder="795134"
+                      >
+                    </div>
+
+                  </div>
+
+                  <label class="checkbox-label">
+                    <input type="checkbox" id="savePayment">
+                    <span>Save payment information for next time</span>
+                  </label>
+
+                </div>
+
+
+                <div class="payment-content" id="upiPayment">
+
+                  <label for="upiId">
+                    UPI ID
+                  </label>
+
+                  <input
+                    type="text"
+                    id="upiId"
+                    placeholder="yourname@upi"
+                  >
+
+                  <p class="payment-help">
+                    Enter your UPI ID. You will be redirected to your
+                    UPI application after placing the order.
+                  </p>
+
+                </div>
+
+
+                <div class="payment-content" id="netbankingPayment">
+
+                  <label for="bank">
+                    Select Bank
+                  </label>
+
+                  <select id="bank">
+                    <option>Select your bank</option>
+                    <option>State Bank of India</option>
+                    <option>HDFC Bank</option>
+                    <option>ICICI Bank</option>
+                    <option>Axis Bank</option>
+                    <option>Punjab National Bank</option>
+                  </select>
+
+                </div>
+
+
+                <div class="payment-content" id="cryptoPayment">
+
+                  <div class="crypto-message">
+                    <i class="fa-brands fa-bitcoin"></i>
+                    <h4>Crypto Payments</h4>
+                    <p>
+                      Crypto payment is available as a UI demonstration
+                      only in this project.
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <button
+                type="submit"
+                class="btn btn-primary full-btn checkout-pay-btn"
+              >
+                PAY NOW
+                <i class="fa-solid fa-lock"></i>
+              </button>
+
+            </form>
+
+          </div>
+
+
+          <aside class="checkout-summary">
+
+            <h3>Your Order</h3>
+
+            <div id="checkoutItems">
+              <!-- Generated by JavaScript -->
+            </div>
+
+            <div class="checkout-coupon">
+              <input
+                type="text"
+                id="checkoutCoupon"
+                placeholder="Coupon code"
+              >
+              <button id="checkoutCouponBtn">APPLY</button>
+            </div>
+
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <strong id="checkoutSubtotal">₹0</strong>
+            </div>
+
+            <div class="summary-row">
+              <span>Shipping</span>
+              <strong id="checkoutShipping">₹0</strong>
+            </div>
+
+            <div class="summary-row">
+              <span>Taxes</span>
+              <strong id="checkoutTaxes">₹0</strong>
+            </div>
+
+            <div class="summary-row discount-row">
+              <span>Discount</span>
+              <strong id="checkoutDiscount">-₹0</strong>
+            </div>
+
+            <div class="summary-total">
+              <span>Total</span>
+              <strong id="checkoutTotal">₹0</strong>
+            </div>
+
+            <div class="secure-payment">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>
+                <strong>Secure payments powered by</strong>
+                <span>SOLEX Secure Checkout</span>
+              </div>
+            </div>
+
+            <div class="payment-badges">
+              <span>Razorpay</span>
+              <span>VISA</span>
+              <span>Mastercard</span>
+              <span>UPI</span>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+
+        <div>
+          <p class="eyebrow">ABOUT SOLEX</p>
+          <h2>Built for people who never stop moving.</h2>
+        </div>
+
+        <div>
+          <p>
+            SOLEX brings together performance, comfort and modern street
+            style. Every collection is designed to help you move with
+            confidence from the street to wherever the day takes you.
+          </p>
+
+          <button class="btn btn-secondary" data-scroll="#shop">
+            SHOP COLLECTION
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div>
+        <a href="#home" class="logo">SOLEX<span>.</span></a>
+        <p>
+          Premium sneakers for everyday movement and modern style.
+        </p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <a href="#shop">Shop</a>
+        <a href="#collections">Collections</a>
+        <a href="#new-arrivals">New Arrivals</a>
+      </div>
+
+      <div>
+        <h4>Support</h4>
+        <a href="#about">About Us</a>
+        <a href="#cart">Shopping Cart</a>
+        <a href="#checkout">Checkout</a>
+      </div>
+
+      <div>
+        <h4>Follow Us</h4>
+
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="#" aria-label="Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 SOLEX. All rights reserved.</p>
+        <p>Designed as an educational e-commerce project.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ================= TOAST ================= -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastMessage">Product added to cart.</span>
+  </div>
+
+
+  <!-- ================= MODAL ================= -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="success-modal">
+
+      <button class="modal-close" id="modalClose">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="success-icon">
+        <i class="fa-solid fa-check"></i>
+      </div>
+
+      <h2>Order Placed!</h2>
+
+      <p>
+        Your demo order has been successfully placed.
+        No real payment has been processed.
+      </p>
+
+      <button class="btn btn-primary" id="modalContinue">
+        CONTINUE SHOPPING
+      </button>
+
+    </div>
+  </div>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+  <script>
+
+    /* =========================================
+       GLOBAL STATE
+    ========================================= */
+
+    let cart = JSON.parse(localStorage.getItem("solexCart")) || [];
+
+    let discountRate = 0;
+
+    let detailQuantity = 1;
+
+    const currency = new Intl.NumberFormat("en-IN", {
+      style: "currency",
+      currency: "INR",
+      maximumFractionDigits: 0
+    });
+
+
+    /* =========================================
+       ELEMENTS
+    ========================================= */
+
+    const cartCount = document.getElementById("cartCount");
+    const cartItems = document.getElementById("cartItems");
+    const emptyCart = document.getElementById("emptyCart");
+
+    const subtotalElement = document.getElementById("subtotal");
+    const shippingElement = document.getElementById("shipping");
+    const taxesElement = document.getElementById("taxes");
+    const discountElement = document.getElementById("discount");
+    const cartTotalElement = document.getElementById("cartTotal");
+
+    const checkoutItems = document.getElementById("checkoutItems");
+    const checkoutSubtotal = document.getElementById("checkoutSubtotal");
+    const checkoutShipping = document.getElementById("checkoutShipping");
+    const checkoutTaxes = document.getElementById("checkoutTaxes");
+    const checkoutDiscount = document.getElementById("checkoutDiscount");
+    const checkoutTotal = document.getElementById("checkoutTotal");
+
+    const toast = document.getElementById("toast");
+    const toastMessage = document.getElementById("toastMessage");
+
+
+    /* =========================================
+       LOCAL STORAGE
+    ========================================= */
+
+    function saveCart() {
+      localStorage.setItem("solexCart", JSON.stringify(cart));
+    }
+
+
+    /* =========================================
+       TOAST
+    ========================================= */
+
+    function showToast(message) {
+
+      toastMessage.textContent = message;
+
+      toast.classList.add("show");
+
+      setTimeout(() => {
+        toast.classList.remove("show");
+      }, 2500);
+    }
+
+
+    /* =========================================
+       ADD TO CART
+    ========================================= */
+
+    function addToCart(name, price, image, quantity = 1) {
+
+      const existingProduct = cart.find(item => item.name === name);
+
+      if (existingProduct) {
+        existingProduct.quantity += quantity;
+      } else {
+        cart.push({
+          id: Date.now(),
+          name,
+          price: Number(price),
+          image,
+          size: "8",
+          quantity
+        });
+      }
+
+      saveCart();
+      updateCart();
+
+      showToast(`${name} added to cart.`);
+
+      document.getElementById("cart").scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+
+
+    /* =========================================
+       UPDATE CART
+    ========================================= */
+
+    function updateCart() {
+
+      const totalItems = cart.reduce(
+        (total, item) => total + item.quantity,
+        0
+      );
+
+      cartCount.textContent = totalItems;
+
+      renderCart();
+
+      renderCheckout();
+
+      updateSummary();
+    }
+
+
+    /* =========================================
+       RENDER CART
+    ========================================= */
+
+    function renderCart() {
+
+      cartItems.innerHTML = "";
+
+      if (cart.length === 0) {
+
+        emptyCart.style.display = "flex";
+
+        return;
+      }
+
+      emptyCart.style.display = "none";
+
+      cart.forEach(item => {
+
+        const row = document.createElement("div");
+
+        row.className = "cart-row";
+
+        row.innerHTML = `
+
+          <div class="cart-product">
+
+            <img
+              src="${item.image}"
+              alt="${item.name}"
+            >
+
+            <div>
+              <strong>${item.name}</strong>
+              <span>Premium Sneaker</span>
+            </div>
+
+          </div>
+
+
+          <div class="cart-size">
+            <span>Size</span>
+
+            <select class="cart-size-select" data-id="${item.id}">
+              <option ${item.size === "6" ? "selected" : ""}>6</option>
+              <option ${item.size === "7" ? "selected" : ""}>7</option>
+              <option ${item.size === "8" ? "selected" : ""}>8</option>
+              <option ${item.size === "9" ? "selected" : ""}>9</option>
+              <option ${item.size === "10" ? "selected" : ""}>10</option>
+              <option ${item.size === "11" ? "selected" : ""}>11</option>
+            </select>
+          </div>
+
+
+          <div class="cart-quantity">
+
+            <button
+              class="cart-minus"
+              data-id="${item.id}"
+            >
+              −
+            </button>
+
+            <span>${item.quantity}</span>
+
+            <button
+              class="cart-plus"
+              data-id="${item.id}"
+            >
+              +
+            </button>
+
+          </div>
+
+
+          <strong class="cart-price">
+            ${currency.format(item.price * item.quantity)}
+          </strong>
+
+
+          <button
+            class="remove-item"
+            data-id="${item.id}"
+            aria-label="Remove ${item.name}"
+          >
+            <i class="fa-solid fa-trash"></i>
+          </button>
+
+        `;
+
+        cartItems.appendChild(row);
+      });
+
+
+      document.querySelectorAll(".cart-plus").forEach(button => {
+
+        button.addEventListener("click", () => {
+
+          const item = cart.find(
+            product => product.id == button.dataset.id
+          );
+
+          if (item) {
+            item.quantity++;
+            saveCart();
+            updateCart();
+          }
+
+        });
+
+      });
+
+
+      document.querySelectorAll(".cart-minus").forEach(button => {
+
+        button.addEventListener("click", () => {
+
+          const item = cart.find(
+            product => product.id == button.dataset.id
+          );
+
+          if (item) {
+
+            item.quantity--;
+
+            if (item.quantity <= 0) {
+              cart = cart.filter(
+                product => product.id != item.id
+              );
+            }
+
+            saveCart();
+            updateCart();
+          }
+
+        });
+
+      });
+
+
+      document.querySelectorAll(".remove-item").forEach(button => {
+
+        button.addEventListener("click", () => {
+
+          cart = cart.filter(
+            item => item.id != button.dataset.id
+          );
+
+          saveCart();
+          updateCart();
+
+          showToast("Product removed from cart.");
+
+        });
+
+      });
+
+
+      document.querySelectorAll(".cart-size-select").forEach(select => {
+
+        select.addEventListener("change", () => {
+
+          const item = cart.find(
+            product => product.id == select.dataset.id
+          );
+
+          if (item) {
+            item.size = select.value;
+            saveCart();
+            renderCheckout();
+
+            showToast(`Size changed to UK ${select.value}.`);
+          }
+
+        });
+
+      });
+
+    }
+
+
+    /* =========================================
+       SUMMARY
+    ========================================= */
+
+    function updateSummary() {
+
+      const subtotal = cart.reduce(
+        (total, item) => total + item.price * item.quantity,
+        0
+      );
+
+      const shipping = subtotal === 0
+        ? 0
+        : subtotal >= 999
+          ? 0
+          : 99;
+
+      const taxes = Math.round(subtotal * 0.05);
+
+      const discount = Math.round(
+        subtotal * discountRate
+      );
+
+      const total = subtotal + shipping + taxes - discount;
+
+
+      subtotalElement.textContent =
+        currency.format(subtotal);
+
+      shippingElement.textContent =
+        shipping === 0
+          ? "FREE"
+          : currency.format(shipping);
+
+      taxesElement.textContent =
+        currency.format(taxes);
+
+      discountElement.textContent =
+        `-${currency.format(discount)}`;
+
+      cartTotalElement.textContent =
+        currency.format(Math.max(total, 0));
+
+
+      checkoutSubtotal.textContent =
+        currency.format(subtotal);
+
+      checkoutShipping.textContent =
+        shipping === 0
+          ? "FREE"
+          : currency.format(shipping);
+
+      checkoutTaxes.textContent =
+        currency.format(taxes);
+
+      checkoutDiscount.textContent =
+        `-${currency.format(discount)}`;
+
+      checkoutTotal.textContent =
+        currency.format(Math.max(total, 0));
+    }
+
+
+    /* =========================================
+       CHECKOUT ITEMS
+    ========================================= */
+
+    function renderCheckout() {
+
+      checkoutItems.innerHTML = "";
+
+      if (cart.length === 0) {
+
+        checkoutItems.innerHTML = `
+          <div class="checkout-empty">
+            Your cart is empty.
+          </div>
+        `;
+
+        return;
+      }
+
+
+      cart.forEach(item => {
+
+        const element = document.createElement("div");
+
+        element.className = "checkout-product";
+
+        element.innerHTML = `
+
+          <div class="checkout-product-image">
+
+            <img
+              src="${item.image}"
+              alt="${item.name}"
+            >
+
+            <span>${item.quantity}</span>
+
+          </div>
+
+          <div class="checkout-product-info">
+            <strong>${item.name}</strong>
+            <span>Size UK ${item.size}</span>
+          </div>
+
+          <strong>
+            ${currency.format(item.price * item.quantity)}
+          </strong>
+
+        `;
+
+        checkoutItems.appendChild(element);
+
+      });
+
+    }
+
+
+    /* =========================================
+       ADD PRODUCT BUTTONS
+    ========================================= */
+
+    document.querySelectorAll(".add-cart-btn").forEach(button => {
+
+      button.addEventListener("click", () => {
+
+        addToCart(
+          button.dataset.product,
+          button.dataset.price,
+          button.dataset.image
+        );
+
+      });
+
+    });
+
+
+    /* =========================================
+       WISHLIST
+    ========================================= */
+
+    document.querySelectorAll(".wishlist-btn").forEach(button => {
+
+      button.addEventListener("click", () => {
+
+        button.classList.toggle("active");
+
+        const icon = button.querySelector("i");
+
+        if (button.classList.contains("active")) {
+
+          icon.classList.remove("fa-regular");
+          icon.classList.add("fa-solid");
+
+          showToast(
+            `${button.dataset.product} added to wishlist.`
+          );
+
+        } else {
+
+          icon.classList.remove("fa-solid");
+          icon.classList.add("fa-regular");
+
+          showToast(
+            `${button.dataset.product} removed from wishlist.`
+          );
+
+        }
+
+      });
+
+    });
+
+
+    /* =========================================
+       DETAIL QUANTITY
+    ========================================= */
+
+    const detailQuantityElement =
+      document.getElementById("detailQuantity");
+
+    document.getElementById("detailPlus").addEventListener(
+      "click",
+      () => {
+
+        detailQuantity++;
+
+        detailQuantityElement.textContent =
+          detailQuantity;
+
+      }
+    );
+
+
+    document.getElementById("detailMinus").addEventListener(
+      "click",
+      () => {
+
+        if (detailQuantity > 1) {
+          detailQuantity--;
+        }
+
+        detailQuantityElement.textContent =
+          detailQuantity;
+
+      }
+    );
+
+
+    /* =========================================
+       SIZE SELECTION
+    ========================================= */
+
+    document.querySelectorAll(".size-btn").forEach(button => {
+
+      button.addEventListener("click", () => {
+
+        document
+          .querySelectorAll(".size-btn")
+          .forEach(btn => btn.classList.remove("active"));
+
+        button.classList.add("active");
+
+        showToast(
+          `Size UK ${button.textContent} selected.`
+        );
+
+      });
+
+    });
+
+
+    /* =========================================
+       DETAIL ADD TO CART
+    ========================================= */
+
+    document
+      .getElementById("detailAddCart")
+      .addEventListener("click", () => {
+
+        const selectedSize =
+          document.querySelector(".size-btn.active").textContent;
+
+        const image =
+          document.getElementById("mainProductImage").src;
+
+        const existingProduct =
+          cart.find(item => item.name === "Street Force 90");
+
+        if (existingProduct) {
+
+          existingProduct.quantity += detailQuantity;
+          existingProduct.size = selectedSize;
+
+          saveCart();
+          updateCart();
+
+          showToast("Street Force 90 updated in cart.");
+
+        } else {
+
+          cart.push({
+            id: Date.now(),
+            name: "Street Force 90",
+            price: 8999,
+            image,
+            size: selectedSize,
+            quantity: detailQuantity
+          });
+
+          saveCart();
+          updateCart();
+
+          showToast("Street Force 90 added to cart.");
+        }
+
+        detailQuantity = 1;
+        detailQuantityElement.textContent = "1";
+
+      });
+
+
+    /* =========================================
+       BUY NOW
+    ========================================= */
+
+    document
+      .getElementById("buyNowBtn")
+      .addEventListener("click", () => {
+
+        const selectedSize =
+          document.querySelector(".size-btn.active").textContent;
+
+        const image =
+          document.getElementById("mainProductImage").src;
+
+        addProductDirectlyForBuyNow(
+          "Street Force 90",
+          8999,
+          image,
+          selectedSize
+        );
+
+        document.getElementById("checkout").scrollIntoView({
+          behavior: "smooth"
+        });
+
+      });
+
+
+    function addProductDirectlyForBuyNow(
+      name,
+      price,
+      image,
+      size
+    ) {
+
+      const existing =
+        cart.find(item => item.name === name);
+
+      if (existing) {
+
+        existing.quantity += detailQuantity;
+        existing.size = size;
+
+      } else {
+
+        cart.push({
+          id: Date.now(),
+          name,
+          price,
+          image,
+          size,
+          quantity: detailQuantity
+        });
+
+      }
+
+      saveCart();
+      updateCart();
+    }
+
+
+    /* =========================================
+       DETAIL WISHLIST
+    ========================================= */
+
+    document
+      .getElementById("detailWishlist")
+      .addEventListener("click", function () {
+
+        this.classList.toggle("active");
+
+        const icon = this.querySelector("i");
+
+        if (this.classList.contains("active")) {
+
+          icon.classList.remove("fa-regular");
+          icon.classList.add("fa-solid");
+
+          showToast("Street Force 90 added to wishlist.");
+
+        } else {
+
+          icon.classList.remove("fa-solid");
+          icon.classList.add("fa-regular");
+
+          showToast("Street Force 90 removed from wishlist.");
+
+        }
+
+      });
+
+
+    /* =========================================
+       PRODUCT IMAGE THUMBNAILS
+    ========================================= */
+
+    const mainProductImage =
+      document.getElementById("mainProductImage");
+
+    document.querySelectorAll(".thumbnail").forEach(thumbnail => {
+
+      thumbnail.addEventListener("click", () => {
+
+        document
+          .querySelectorAll(".thumbnail")
+          .forEach(item => {
+            item.classList.remove("active");
+          });
+
+        thumbnail.classList.add("active");
+
+        const image =
+          thumbnail.querySelector("img");
+
+        mainProductImage.src = image.src;
+
+      });
+
+    });
+
+
+    /* =========================================
+       SEARCH
+    ========================================= */
+
+    const searchPanel =
+      document.getElementById("searchPanel");
+
+    const searchInput =
+      document.getElementById("searchInput");
+
+    document
+      .getElementById("searchBtn")
+      .addEventListener("click", () => {
+
+        searchPanel.classList.toggle("active");
+
+        if (searchPanel.classList.contains("active")) {
+          searchInput.focus();
+        }
+
+      });
+
+
+    document
+      .getElementById("closeSearch")
+      .addEventListener("click", () => {
+
+        searchPanel.classList.remove("active");
+
+        searchInput.value = "";
+
+        filterProducts("");
+
+      });
+
+
+    searchInput.addEventListener("input", () => {
+
+      filterProducts(searchInput.value.toLowerCase());
+
+    });
+
+
+    function filterProducts(searchTerm) {
+
+      const products =
+        document.querySelectorAll(".product-card");
+
+      let found = false;
+
+      products.forEach(product => {
+
+        const name =
+          product.dataset.name.toLowerCase();
+
+        const category =
+          product.dataset.category.toLowerCase();
+
+        const matches =
+          name.includes(searchTerm) ||
+          category.includes(searchTerm);
+
+        product.style.display =
+          matches ? "" : "none";
+
+        if (matches) {
+          found = true;
+        }
+
+      });
+
+      document.getElementById("noResults").style.display =
+        found ? "none" : "block";
+    }
+
+
+    /* =========================================
+       CART BUTTON
+    ========================================= */
+
+    document
+      .getElementById("cartBtn")
+      .addEventListener("click", () => {
+
+        document.getElementById("cart").scrollIntoView({
+          behavior: "smooth"
+        });
+
+      });
+
+
+    /* =========================================
+       SCROLL BUTTONS
+    ========================================= */
+
+    document
+      .querySelectorAll("[data-scroll]")
+      .forEach(button => {
+
+        button.addEventListener("click", () => {
+
+          const target =
+            document.querySelector(
+              button.dataset.scroll
+            );
+
+          if (target) {
+
+            target.scrollIntoView({
+              behavior: "smooth"
+            });
+
+          }
+
+        });
+
+      });
+
+
+    /* =========================================
+       MOBILE MENU
+    ========================================= */
+
+    const mobileMenu =
+      document.getElementById("mobileNav");
+
+    const mobileMenuButton =
+      document.getElementById("mobileMenuBtn");
+
+    mobileMenuButton.addEventListener("click", () => {
+
+      mobileMenu.classList.toggle("active");
+
+      const icon =
+        mobileMenuButton.querySelector("i");
+
+      if (mobileMenu.classList.contains("active")) {
+
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+
+      } else {
+
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+
+      }
+
+    });
+
+
+    document
+      .querySelectorAll(".mobile-nav a")
+      .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+          mobileMenu.classList.remove("active");
+
+          const icon =
+            mobileMenuButton.querySelector("i");
+
+          icon.classList.remove("fa-xmark");
+          icon.classList.add("fa-bars");
+
+        });
+
+      });
+
+
+    /* =========================================
+       PAYMENT TABS
+    ========================================= */
+
+    const paymentTabs =
+      document.querySelectorAll(".payment-tab");
+
+    const paymentContents =
+      document.querySelectorAll(".payment-content");
+
+
+    paymentTabs.forEach(tab => {
+
+      tab.addEventListener("click", () => {
+
+        paymentTabs.forEach(item => {
+          item.classList.remove("active");
+        });
+
+        paymentContents.forEach(content => {
+          content.classList.remove("active");
+        });
+
+        tab.classList.add("active");
+
+        const payment =
+          tab.dataset.payment;
+
+        const content =
+          document.getElementById(
+            `${payment}Payment`
+          );
+
+        if (content) {
+          content.classList.add("active");
+        }
+
+      });
+
+    });
+
+
+    /* =========================================
+       COUPON
+    ========================================= */
+
+    function applyCoupon(input, messageElement) {
+
+      const code =
+        input.value.trim().toUpperCase();
+
+      if (code === "SOLEX10") {
+
+        discountRate = 0.10;
+
+        messageElement.textContent =
+          "Coupon applied! You saved 10%.";
+
+        messageElement.className =
+          "coupon-message success";
+
+        updateSummary();
+
+        showToast("10% discount applied.");
+
+      } else if (code === "") {
+
+        messageElement.textContent =
+          "Enter a coupon code.";
+
+        messageElement.className =
+          "coupon-message error";
+
+      } else {
+
+        messageElement.textContent =
+          "Invalid coupon. Try SOLEX10.";
+
+        messageElement.className =
+          "coupon-message error";
+
+      }
+
+    }
+
+
+    document
+      .getElementById("couponBtn")
+      .addEventListener("click", () => {
+
+        applyCoupon(
+          document.getElementById("couponInput"),
+          document.getElementById("couponMessage")
+        );
+
+      });
+
+
+    document
+      .getElementById("checkoutCouponBtn")
+      .addEventListener("click", () => {
+
+        const input =
+          document.getElementById("checkoutCoupon");
+
+        const message =
+          document.createElement("p");
+
+        message.className =
+          "coupon-message";
+
+        input.parentElement.after(message);
+
+        applyCoupon(input, message);
+
+      });
+
+
+    /* =========================================
+       CART PAY NOW
+    ========================================= */
+
+    document
+      .getElementById("cartPayBtn")
+      .addEventListener("click", () => {
+
+        if (cart.length === 0) {
+
+          showToast("Your cart is empty.");
+
+          return;
+        }
+
+        document.getElementById("checkout").scrollIntoView({
+          behavior: "smooth"
+        });
+
+      });
+
+
+    /* =========================================
+       CHECKOUT FORM
+    ========================================= */
+
+    document
+      .getElementById("checkoutForm")
+      .addEventListener("submit", event => {
+
+        event.preventDefault();
+
+        if (cart.length === 0) {
+
+          showToast("Add a product before checkout.");
+
+          return;
+        }
+
+
+        const email =
+          document.getElementById("email");
+
+
+        if (!email.checkValidity()) {
+
+          email.reportValidity();
+
+          return;
+        }
+
+
+        const activePayment =
+          document.querySelector(
+            ".payment-tab.active"
+          ).dataset.payment;
+
+
+        if (activePayment === "card") {
+
+          const cardNumber =
+            document.getElementById("cardNumber");
+
+          const expiry =
+            document.getElementById("expiry");
+
+          const cvv =
+            document.getElementById("cvv");
+
+
+          if (
+            cardNumber.value.trim() === "" ||
+            expiry.value.trim() === "" ||
+            cvv.value.trim() === ""
+          ) {
+
+            showToast(
+              "Please complete your card details."
+            );
+
+            return;
+          }
+
+        }
+
+
+        if (activePayment === "upi") {
+
+          const upi =
+            document.getElementById("upiId");
+
+          if (upi.value.trim() === "") {
+
+            showToast("Please enter your UPI ID.");
+
+            return;
+          }
+
+        }
+
+
+        showOrderModal();
+
+      });
+
+
+    /* =========================================
+       ORDER MODAL
+    ========================================= */
+
+    const modalOverlay =
+      document.getElementById("modalOverlay");
+
+
+    function showOrderModal() {
+
+      modalOverlay.classList.add("active");
+
+    }
+
+
+    document
+      .getElementById("modalClose")
+      .addEventListener("click", () => {
+
+        modalOverlay.classList.remove("active");
+
+      });
+
+
+    document
+      .getElementById("modalContinue")
+      .addEventListener("click", () => {
+
+        modalOverlay.classList.remove("active");
+
+        cart = [];
+
+        discountRate = 0;
+
+        saveCart();
+
+        updateCart();
+
+        document.getElementById("shop").scrollIntoView({
+          behavior: "smooth"
+        });
+
+        showToast("Thank you for shopping with SOLEX!");
+
+      });
+
+
+    modalOverlay.addEventListener("click", event => {
+
+      if (event.target === modalOverlay) {
+
+        modalOverlay.classList.remove("active");
+
+      }
+
+    });
+
+
+    /* =========================================
+       CARD NUMBER FORMATTING
+    ========================================= */
+
+    document
+      .getElementById("cardNumber")
+      .addEventListener("input", function () {
+
+        let value =
+          this.value.replace(/\D/g, "");
+
+        value =
+          value.substring(0, 16);
+
+        this.value =
+          value.replace(
+            /(.{4})/g,
+            "$1 "
+          ).trim();
+
+      });
+
+
+    /* =========================================
+       EXPIRY FORMATTING
+    ========================================= */
+
+    document
+      .getElementById("expiry")
+      .addEventListener("input", function () {
+
+        let value =
+          this.value.replace(/\D/g, "");
+
+        value =
+          value.substring(0, 4);
+
+        if (value.length >= 3) {
+
+          value =
+            value.substring(0, 2) +
+            " / " +
+            value.substring(2);
+
+        }
+
+        this.value = value;
+
+      });
+
+
+    /* =========================================
+       ACTIVE NAVIGATION
+    ========================================= */
+
+    const sections =
+      document.querySelectorAll("section[id]");
+
+    const navLinks =
+      document.querySelectorAll(".desktop-nav .nav-link");
+
+
+    window.addEventListener("scroll", () => {
+
+      let current = "";
+
+      sections.forEach(section => {
+
+        const sectionTop =
+          section.offsetTop - 150;
+
+        if (window.scrollY >= sectionTop) {
+          current = section.id;
+        }
+
+      });
+
+
+      navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if (
+          link.getAttribute("href") ===
+          `#${current}`
+        ) {
+
+          link.classList.add("active");
+
+        }
+
+      });
+
+    });
+
+
+    /* =========================================
+       PROFILE BUTTON
+    ========================================= */
+
+    document
+      .querySelector(".profile-btn")
+      .addEventListener("click", () => {
+
+        showToast(
+          "Profile feature is ready for account integration."
+        );
+
+      });
+
+
+    /* =========================================
+       INITIALIZE
+    ========================================= */
+
+    updateCart();
+
+  </script>
+
+</body>
+</html>
